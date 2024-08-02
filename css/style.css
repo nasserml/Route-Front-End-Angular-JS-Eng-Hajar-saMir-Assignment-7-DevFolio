@@ -1,0 +1,483 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 84px;
+}
+body{
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #F5F5F5;
+}
+
+/* custome class */
+
+.font-size-28px {
+    font-size:1.75rem ;
+}
+
+.line-height-34px{
+    line-height: 2.125rem;
+}
+
+.bg-hexa-rgba-0-0-0-0-9{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+
+.py-20px {
+
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.py-2px{
+    padding-top:0.125rem;
+    padding-bottom: 0.125rem;
+}
+
+.ps-22px{
+    padding-left: 1.375rem;
+}
+
+.ps-14px{
+    padding-left: 0.875rem;
+}
+
+.letter-space-0\.4px {
+    letter-spacing: 0.025rem;
+}
+
+/* NavBar style css rules */
+
+.nav-link span{
+    position: relative;
+   
+}
+.nav-link.active span::after{
+    height: 1px;
+}
+.nav-link span::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-item:hover .nav-link span::after{
+    width: 100%;
+}
+
+
+.fs-72px{
+    font-size: 4.5rem;
+}
+
+
+
+
+
+
+body:not(:has(:target)) .navbar-nav li:nth-child(1) .nav-link span::after,
+body:has(#home:target) .navbar-nav li:nth-child(1) .nav-link span::after,
+body:has(#about:target) .navbar-nav li:nth-child(2) .nav-link span::after,
+body:has(#services:target) .navbar-nav li:nth-child(3) .nav-link span::after,
+body:has(#work:target) .navbar-nav li:nth-child(4) .nav-link span::after,
+body:has(#blog:target) .navbar-nav li:nth-child(5) .nav-link span::after
+ {
+    width: 100%;
+}
+
+
+
+
+/*  Home css Rules */
+#home{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)),url("../img/hero-bg.jpg");
+    
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+.home-text p::after{
+    content: "";
+    animation: typing 15s infinite  ease-in-out;
+
+
+}
+
+@keyframes typing {
+
+    0% {content: '|';}
+    0.5% {content: 'P|';}
+    1% {content: 'Ph|';}
+    2% {content: 'Pho|';}
+    3% {content: 'Phot|';}
+    4% {content: 'Photog|';}
+    5% {content: 'Photogr|';}
+    6% {content: 'Photogra|';}
+    7% {content: 'Photograp|';}
+    8% {content: 'Photograph|';}
+    9% {content: 'Photographe|';}
+    10% {content: 'Photographer|';}
+    11% {content: 'Photographer';}
+    12% {content: 'Photographer|';}
+    13% {content: 'Photographer';}
+    14% {content: 'Photographer|';}
+    15% {content: 'Photograph|';}
+    16% {content: 'Photograp|';}
+    17% {content: 'Photogra|';}
+    18% {content: 'Photogr|';}
+    19% {content: 'Photog|';}
+    20% {content: 'Photo|';}
+    21% {content: 'Phot|';}
+    23% {content: 'Pho|';}
+    24% {content: 'Ph|';}
+    25% {content: 'P|';}
+    26% {content: '|';}
+    27% {content: 'D|';}
+    28% {content: 'De|';}
+    29% {content: 'Des|';}
+    30% {content: 'Desi|';}
+    31% {content: 'Desig|';}
+    32% {content: 'Design|';}
+    33% {content: 'Designe|';}
+    34% {content: 'Designer|';}
+    35% {content: 'Designer';}
+    36% {content: 'Designer|';}
+    37% {content: 'Designer';}
+    38% {content: 'Designer|';}
+    40% {content: 'Designe|';}
+    41% {content: 'Design|';}
+    42% {content: 'Desig|';}
+    43% {content: 'Desi|';}
+    44% {content: 'De|';}
+    45% {content: 'Dev|';}
+    46% {content: 'Deve|';}
+    47% {content: 'Devel|';}
+    49% {content: 'Develo|';}
+    50% {content: 'Develop|';}
+    51% {content: 'Develope|';}
+    52% {content: 'Developer|';}
+    53% {content: 'Developer';}
+    54% {content: 'Developer|';}
+    55% {content: 'Developer';}
+    56% {content: 'Developer|';}
+    57% {content: 'Develope|';}
+    58% {content: 'Develop|';}
+    59% {content: 'Develo|';}
+    60% {content: 'Devel|';}
+    61% {content: 'Deve|';}
+    62% {content: 'Deve|';}
+    63% {content: 'Dev|';}
+    64% {content: 'De|';}
+    65% {content: 'D|';}
+    66% {content: '|';}
+    67% {content: 'F|';}
+    68% {content: 'Fr|';}
+    69% {content: 'Fre|';}
+    70% {content: 'Free|';}
+    71% {content: 'Freel|';}
+    72% {content: 'Freela|';}
+    73% {content: 'Freelan|';}
+    74% {content: 'Freelanc|';}
+    75% {content: 'Freelance|';}
+    76% {content: 'Freelancer|';}
+    77% {content: 'Freelancer';}
+    78% {content: 'Freelancer|';}
+    79% {content: 'Freelancer';}
+    80% {content: 'Freelancer|';}
+    81% {content: 'Freelance|';}
+    82% {content: 'Freelanc|';}
+    83% {content: 'Freelan|';}
+    84% {content: 'Freela|';}
+    85% {content: 'Freel|';}
+    86% {content: 'Free|';}
+    87% {content: 'Fre|';}
+    88% {content: 'Fr|';}
+    89% {content: 'F|';}
+    90% {content: '|';}
+    
+    
+    
+}
+
+
+
+
+.pt-64px{
+    padding-top: 4rem ;
+}
+
+
+.py-64px{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+
+.px-48px {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+
+.mb-48px{
+    margin-bottom: 3rem;
+}
+
+.fs-18px {
+    font-size: 1.125rem;
+}
+
+.line-height-26px{
+    line-height: 1.625rem;
+}
+
+
+.mb-32px{
+    margin-bottom: 2rem ;
+}
+
+.ml-10px{
+    margin-left: 0.625rem;
+}
+
+
+.color-rgb\(30\,30\,30\) {
+    color: rgb(30, 30, 30);
+}
+
+.color-rgb\(33\,37\,41\){
+    color: rgb(33, 37, 41);
+}
+
+.color-rgb\(78\,78\,78\) {
+    color: rgb(78, 78, 78);
+
+}
+
+.about-title h5{
+    position: relative;
+}
+
+.about-title h5::before{
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background-color: #0078ff;
+
+}
+
+.font-size-48px{
+    font-size: 3rem;
+}
+
+.line-height-58px{
+    line-height: 3.625rem;
+}
+
+
+.line-blue{
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff ;
+}
+
+.background-color-\#0078ff{
+    background-color: #0078ff;
+}
+
+
+
+
+
+.service-icon span{
+    height: 100px;
+    width: 100px;
+    box-shadow: 0 0 0 10px #0078ff;
+    transition: all 500ms ease;
+}
+
+.service-text h2{
+    text-transform: uppercase;
+}
+
+
+#services .inner:hover .service-icon span{
+    transition: all 500ms ease;
+    color: white;
+    background-color: #0078ff;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+
+
+
+/* Experience */
+#experience {
+    background-image: linear-gradient(rgba(0,120,255,0.7),rgba(0,120,255,0.7)),url("../img/counters-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.experience-icon span{
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 0 0 10px #cde1f8;
+    
+}
+
+.py-128px {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+
+/* work css rules */
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+#work .work-image img {
+
+    transition: scale 1s;
+}
+
+#work .work-image img:hover {
+    scale: 1.3;
+}
+
+.max-width-960px{
+    max-width: 960px ;
+}
+
+.max-width-zero{
+    max-width: unset;
+}
+
+
+/* Reviews css rules */
+
+#reviews {
+    background-image: linear-gradient(rgba(0,120,255,0.7),rgba(0,120,255,0.7)),url("../img/overlay-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.background-props{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-indicators button{
+    width: 12px !important;
+    height: 12px !important;
+}
+
+.blog-card ul li img {
+    width: 32px;
+    height: 32px;
+}
+
+.blog ul li .img{
+    transition: color 300ms ease;
+}
+
+.blog-card ul li .img:hover {
+
+    cursor: pointer ;
+    color: rgb(13, 120, 255);
+    
+}
+
+.hover-color{
+    transition: color 300ms ease;
+}
+
+
+.hover-color:hover {
+    color: rgb(13, 120, 255);
+}
+ 
+.translate-y-50{
+    transform: translateY(50%) translateX(-50%) !important;
+
+}
+
+.fs-11{
+    font-size: 11px;
+}
+
+
+.line-blue-contact {
+    background-color: #0078ff;
+    width: 100px;
+    height: 3px;
+}
+
+#contact {
+    background-image: linear-gradient(rgba(0,120,255,0.7),rgba(0,120,255,0.7)),url("../img/overlay-bg.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.line-2{
+    line-height: 2;
+}
+
+.social-icons li a{
+    color: #1e1e1e;
+    text-decoration: none;
+    transition: all 500ms ease-in-out;
+}
+.social-icons li a:hover{
+    color: #0078ff;
+    text-decoration: none;
+    transition: color 0.5s ease-in-out;
+}
+
+.social-icon-circle {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #0078ff;
+    transition: box-shadow 300ms ease;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    transition: all 500ms ease;
+}
+
+.social-icon-circle.social-icon-circle:hover {
+    background-color: #0078ff;
+    color: white;
+    box-shadow: 0 0 0 3px #cde1f8;
+    transition: all 500ms ease;
+}
+
+#footer{
+    background-color: #0062d3;
+}
+
+#contact {
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
